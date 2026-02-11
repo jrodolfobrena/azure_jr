@@ -1,0 +1,32 @@
+{
+	"name": "BlobStorageClientes",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageFuente",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "clientes.csv",
+				"container": "fuente"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id_cliente",
+				"type": "String"
+			},
+			{
+				"name": "nombre_cliente",
+				"type": "String"
+			}
+		]
+	}
+}
