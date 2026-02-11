@@ -1,0 +1,9 @@
+{
+	"name": "azf-movie-rodo",
+	"location": "mexicocentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "479c291d-6f0d-4b78-9582-0b8355bb6e5d",
+		"tenantId": "47121743-1fb5-495f-8001-fed9a3494b97"
+	}
+}

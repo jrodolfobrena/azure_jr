@@ -1,0 +1,81 @@
+{
+	"name": "Demo",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "clientes.csv",
+				"container": "democlient"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "movieId",
+				"type": "String"
+			},
+			{
+				"name": "title",
+				"type": "String"
+			},
+			{
+				"name": "budget",
+				"type": "String"
+			},
+			{
+				"name": "homePage",
+				"type": "String"
+			},
+			{
+				"name": "overview",
+				"type": "String"
+			},
+			{
+				"name": "popularity",
+				"type": "String"
+			},
+			{
+				"name": "yearReleaseDate",
+				"type": "String"
+			},
+			{
+				"name": "releaseDate",
+				"type": "String"
+			},
+			{
+				"name": "revenue",
+				"type": "String"
+			},
+			{
+				"name": "durationTime",
+				"type": "String"
+			},
+			{
+				"name": "movieStatus",
+				"type": "String"
+			},
+			{
+				"name": "tagline",
+				"type": "String"
+			},
+			{
+				"name": "voteAverage",
+				"type": "String"
+			},
+			{
+				"name": "voteCount",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

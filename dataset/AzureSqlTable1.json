@@ -1,0 +1,83 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "movieId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "title",
+				"type": "varchar"
+			},
+			{
+				"name": "budget",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "homePage",
+				"type": "varchar"
+			},
+			{
+				"name": "overview",
+				"type": "varchar"
+			},
+			{
+				"name": "popularity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "yearReleaseDate",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "releaseDate",
+				"type": "date"
+			},
+			{
+				"name": "revenue",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "durationTime",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "movieStatus",
+				"type": "varchar"
+			},
+			{
+				"name": "tagline",
+				"type": "varchar"
+			},
+			{
+				"name": "voteAverage",
+				"type": "decimal",
+				"precision": 2,
+				"scale": 2
+			},
+			{
+				"name": "voteCount",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "clientes"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
